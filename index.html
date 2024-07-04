@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <style>@import url('https://fonts.googleapis.com/css2?family=Anton+SC&display=swap');</style>
+    <link rel="shortcut icon" href="imagens/favicon.jpg" type="image/x-icon">
+    <title>Pedra,Papel,Tesoura,Lagarto ou Spock</title>
+</head>
+<body>
+    <header>
+        <h3 id="tt">Pedra,Papel,Tesoura,Lagarto ou Spock</h3>
+    </header>
+    <button id="abrir" onclick="abrir()">Regras do jogo</button>
+        <dialog>
+            <p>
+                • Pedra ganha de tesoura (quebrando-a);<br>
+                • Pedra ganha de lagarto (esmagando-o); <br>
+                • Papel ganha de Spock (refutando-o); <br>
+                • Papel ganha de pedra (embrulhando-o) ; <br>
+                • Tesoura ganha de lagarto (decaptando-o); <br>
+                • Tesoura ganha de papel (cortando-o);<br>
+                • Lagarto ganha de Spock (envenenando-o); <br>
+                • Lagarto ganha de papel (comendo-o); <br>
+                • Spock ganha de tesoura (derretendo-a) e; <br>
+                • Spock ganha de pedra (vaporizando-a). <br>
+            </p>
+            <div id="fechar">
+                <button onclick="fechar()"> OK</button>
+            </div>
+        </dialog>
+    <main>
+
+        <section class="jogador">
+            <h3>Jogador: <span>escolha uma opção</span></h3>
+            <div class="opção opção-jogador">
+                <div>
+                    <img opt="pedra" src="imagens\pedra.png" alt="pedra">
+                </div>
+                <div>
+                    <img opt="papel" src="imagens/papel.png" alt="papel">
+                </div>
+                <div>
+                    <img opt="tesoura" src="imagens\tesoura.png" alt="tesoura">
+                </div>
+                <div>
+                    <img opt="lagarto" src="imagens\lagarto.png" alt="lagarto">
+                </div>
+                <div>
+                    <img opt="spock" src="imagens\spock.png" alt="spock">
+                </div>
+            </div>
+        </section>
+
+        <section class="Resultado">
+            <h3>Vencedor: </h3>
+            <p id="resultado"></p>
+        </section>
+
+        <section class="computador">
+            <h3>Computador:</h3>
+            <div class="opção opção-computador">
+                <div>
+                    <img opt="pedra" src="imagens\pedra.png" alt="pedra">
+                </div>
+                <div>
+                    <img opt="papel" src="imagens/papel.png" alt="pedra">
+                </div>
+                <div>
+                    <img opt="tesoura" src="imagens\tesoura.png" alt="pedra">
+                </div>
+                <div>
+                    <img opt="lagarto" src="imagens\lagarto.png" alt="pedra">
+                </div>
+                <div>
+                    <img opt="spock" src="imagens\spock.png" alt="pedra">
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+
+</body>
+</html>
